@@ -156,7 +156,7 @@ class _MusicPlayerDetailScreenState extends State<MusicPlayerDetailScreen> with 
     });
   }
 
-  final ValueNotifier<double> _volume = ValueNotifier(0);
+  late final ValueNotifier<double> _volume = ValueNotifier((size.width - 80) / 2);
   late final size = MediaQuery.of(context).size;
 
   void _onVolumeDragUpdate(DragUpdateDetails details) {
