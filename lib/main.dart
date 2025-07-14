@@ -20,6 +20,11 @@ class MyApp extends StatelessWidget {
           primary: Colors.blue,
         ),
         useMaterial3: true,
+        navigationBarTheme: NavigationBarThemeData(
+          backgroundColor: Colors.blue.shade300,
+          indicatorColor: Colors.amber,
+          labelBehavior: NavigationDestinationLabelBehavior.alwaysShow,
+        ),
       ),
       home: const MenuScreen(),
     );
